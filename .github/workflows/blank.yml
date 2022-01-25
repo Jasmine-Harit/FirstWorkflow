@@ -1,7 +1,12 @@
 name: Demo
 on: [push]
 jobs: 
+  setup:
+    runs-on: ubuntu-latest
+    steps:
+      - run: ./setup_server.sh
   build:
+    needs: setup
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository code
