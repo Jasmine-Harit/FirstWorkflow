@@ -4,5 +4,8 @@ jobs:
   Explore-Github-Actions:
     runs-on: ubuntu-latest
     steps:
-      -run: echo "Hello World."
+      -  run: echo "Hello World."
+      -  name: Check out repository code
+         uses: actions/checkout@v2
+         
       
