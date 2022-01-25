@@ -14,7 +14,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Build the Docker image
-      uses: uses/docker-build-push@v5
+      uses: mr-smithers-excellent/docker-build-push@v5
       with:
           image: jasmine992/jasmine-docker
           registry: docker.io
