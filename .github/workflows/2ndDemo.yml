@@ -1,11 +1,17 @@
 name: Demo
 on: [push]
 jobs: 
-  Explore-Github-Actions:
+  build:
     runs-on: ubuntu-latest
     steps:
       -  run: echo "Hello World."
       -  name: Check out repository code
          uses: actions/checkout@v2
+  display: 
+    runs-on: ubuntu-latest
+    steps:
+      -  name: print a value
+      -  run: echo hello from another job 
+
          
       
