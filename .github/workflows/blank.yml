@@ -6,7 +6,9 @@ jobs:
     steps:
       - name: Check out repository code
         uses: actions/checkout@v2
-        
+      - name: Download a Build Artifact
+        uses: actions/download-artifact@v2.1.0
+   
         
   display:
     runs-on: ubuntu-latest
